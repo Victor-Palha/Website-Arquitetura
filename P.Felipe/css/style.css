@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../img/bg.jpg');
+}
+.header{
+    background-color: #000000;
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 999;
+}
+.logo-img{
+    margin: 20px;
+}
+.header nav{
+    margin: 0px 20px;
+    font-size: 20px;
+    display: flex;
+}
+.header nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    
+}
+.header nav a:hover{
+    background-color: rgb(207, 201, 201);
+    color: #000000;
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px black;
+}
+.hamburguer{
+    font-size: 40px;
+    text-align: end;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+.hamburguer a{
+    color: white;
+    text-decoration: none;
+}
+main{
+    margin-top: 120px;
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .myslides{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 500px;
+    
+  }
+  .photos{     
+    transition: 0.5s;  
+    opacity: 0; 
+    display: none;
+  }
+  .photos img{
+    height: 500px;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.596);
+  }
+@media screen and (max-width: 930px){
+    .logo-img{
+        display: block;
+        text-align: center;
+    }
+    .hamburguer{
+        display: block;
+        z-index: 999;
+    }
+    .header nav{
+        margin: 0;
+        flex-direction: column; 
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        background-color: #000000;   
+        padding: 100px 20px;   
+        width: 100%;
+        max-width: 200px;
+        transition: 0.7s;
+    }
+    .nav.active{
+        right: 0;
+    }
+    .myslides{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding: 10px;
+        height: 400px;
+      }
+      .photos{    
+        display: none;   
+      }
+      .photos img{
+        height: 400px;
+        width: 100%;
+      }
+      .next {
+        right: 10px;
+        border-radius: 3px 0 0 3px;
+      }
+}
+@media screen and (max-width: 740px){
+    .myslides{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding: 10px;
+        height: 300px;
+      }
+      .photos{    
+        display: none;   
+      }
+      .photos img{
+        height: 300px;
+        width: 100%;
+      }
+}
