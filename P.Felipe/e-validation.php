@@ -37,20 +37,22 @@ if($email && $conteudo){
 
     if($mail->send()) {
         echo "
-        <div class='valida-suce'>
-            <h2>Mensagem enviada com sucesso!</h2>
-        </div>
+        <script> 
+        alert('Mensagem enviada com sucesso!')
+        </script>
         ";
     } else {
-        echo "<div class='valida'>
-                <h2>Erro! E-mail não enviado, tente novamente mais tarde!</h2>
-            </div>";
+        echo "
+        <script> 
+        alert('Erro! E-mail não enviado, tente novamente mais tarde!')
+        </script>
+            ";
     }
 }else{
         echo "
-        <div class='valida'>
-            <h2>Erro ao enviar mensagem, verifique as informações!</h2>
-        </div>
+        <script> 
+        alert('Erro ao enviar mensagem, verifique as informações!')
+        </script>
         ";
 }
 ?>
@@ -61,7 +63,7 @@ if($email && $conteudo){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Felipe Arquitetura</title>
+    <title>Contato</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/valida.css">
@@ -86,12 +88,11 @@ if($email && $conteudo){
             <a href="contato.php">Contato</a>
         </nav>
     </header>
-    
+    <main>
     <div class='voltar'>
         <a href="contato.php">Voltar</a>
     </div>
-    
-
+</main>
     <script src="header.js"></script>
     <script src="slides.js"></script>
 </body>
