@@ -92,8 +92,8 @@ if($email && $conteudo){
     <div class='voltar'>
         <a href="contato.php">Voltar</a>
     </div>
+    
 </main>
     <script src="header.js"></script>
-    <script src="slides.js"></script>
 </body>
 </html>
