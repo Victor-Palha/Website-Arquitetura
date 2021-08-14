@@ -48,7 +48,7 @@
                         </div>
                         <div class="back-end-infos">
                             <label for="nome">E-mail *</label> </br>
-                            <input type="email" name="email" id="email"> <br>
+                            <input type="email" name="email" id="email" required> <br>
                         </div>
                         <div class="back-end-infos">
                             <label for="nome">Assunto</label> </br>
@@ -69,7 +69,7 @@
                         </div>
                         <div class="back-end-infos">
                             <label for="nome">Escreva sua mensagem *</label> </br>
-                            <textarea name="conteudo"></textarea>
+                            <textarea name="conteudo" required></textarea>
                         </div>
                         <div class="submit">
                             <input type="submit" value="Enviar!" onclick="validacao()">
