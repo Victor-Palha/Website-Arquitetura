@@ -88,10 +88,6 @@
         <a href="https://www.instagram.com/arq.felipepalha/" target="_blank" rel="external"><abbr title="Instagram"><img src="img/icone-insta.png" alt=""></abbr></a>
         <abbr title="+55 91 8106-8185"><img src="img/icone-zap.png" alt=""></abbr>
     </footer>
-    <script>
-        alert("Os campos com * são obrigatórios para o envio de sua mensagem!");
-    </script>
-    <script src="valida.js"></script>
     <script src="header.js"></script>
     <script src="slides.js"></script>
 </body>
